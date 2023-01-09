@@ -24,13 +24,13 @@ test:
 	pipenv run nosetests -v --with-coverage --cover-html --cover-html-dir=htmlcov
 
 docker-build:
-	docker build -t panther-detections .
+	docker build -t panther-community-detections .
 
 docker-test:
-	docker run --mount "type=bind,source=${CURDIR},target=/home/panther-detections" panther-detections make test
+	docker run --mount "type=bind,source=${CURDIR},target=/home/panther-community-detections" panther-community-detections make test
 
 docker-lint:
-	docker run --mount "type=bind,source=${CURDIR},target=/home/panther-detections" panther-detections make lint
+	docker run --mount "type=bind,source=${CURDIR},target=/home/panther-community-detections" panther-community-detections make lint
 
 pypi: ## Publish to PyPi
 	rm -rf dist *.egg-info

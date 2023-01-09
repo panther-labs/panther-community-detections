@@ -9,7 +9,7 @@ RUN pip install --upgrade pip
 RUN pip install pipenv
 
 # Swithc working directories
-WORKDIR /home/panther-analysis
+WORKDIR /home/panther-community-detections
 
 # Install requirements
 COPY Pipfile .
