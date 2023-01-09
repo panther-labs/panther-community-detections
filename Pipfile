@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+bandit = "~=1.7"
+black = "~=22.10.0"
+isort = "~=5.11.3"
+mypy = "~=0.99"
+panther-analysis-tool = "~=0.18"
+pylint = "~=2.15.0"
+pylint-print = "~=1.0.0"
+nose = "~=1.3.7"
+twine = "*"
+
+[packages]
+panther-sdk = "~=0.0.21"
+
+[requires]
+python_version = "3.9"
