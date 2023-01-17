@@ -3,7 +3,7 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 this_directory = Path(__file__).parent
-VERSION = (this_directory / "VERSION").read_text().strip()
+VERSION = "0.0.2"
 
 setup(
     name="panther_community_detections",
