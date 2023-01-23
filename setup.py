@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from setuptools import find_packages, setup
+from setuptools import setup
 
 this_directory = Path(__file__).parent
 VERSION = "0.0.2"
@@ -8,7 +8,8 @@ VERSION = "0.0.2"
 setup(
     name="panther_community_detections",
     version=VERSION,
-    packages=find_packages(),
+    packages=["panther_community_detections"],
+    package_data={"panther_community_detections": ["py.typed"]},
     license="AGPL-3.0",
     description="",
     author="Panther Labs Inc",
